@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+::selection{
+    color: #fff;
+    background: #4db2ec;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #4facfe;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    padding: 2em 0;
+}
+#page-title{
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 0px 0px 15px #0000003a;
+}
+#title_hr{
+    width:60px;
+    border: 2px solid #ffffff;
+    margin: .35em auto;
+}
+@media (min-width: 780px){
+    #page-title{
+    width: 780px;
+    }
+}
+ 
+div#generator-wrapper {
+    width: 480px;
+    margin: 1em auto;
+    padding: 2em 1em;
+    background: #fff;
+    border: 1px solid #d1d1d1;
+    box-shadow: 0px 0px 10px #00000038;
+}
+ 
+.inline-form-field {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+ 
+.form-field{
+    position: relative;
+    width: 50%;
+    padding: 15px 20px;
+}
+ 
+.form-field>label,
+.form-field>input{
+    display: block;
+    width: 100%;
+}
+ 
+.form-field>label {
+    color: #4e4e4e;
+    margin-bottom:5px;
+}
+ 
+.form-field>input {
+    padding: 0.35em 0.5em;
+    border: 1px solid #c9bdbd;
+    outline: none;
+}
+ 
+.form-field>input:focus {
+    border-color: #94def596;
+    box-shadow: 0px 0px 7px #94def547;
+}
+ 
+.btn-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button#generate-btn {
+    padding: 0.35em 0.75em;
+    background: #00adff;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 50px;
+}
+ 
+button#generate-btn:hover {
+    background: #0474a8;
+    box-shadow: 0px 0px 10px #0474a844;
+}
+ 
+div#generated-code {
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 2px;
+}

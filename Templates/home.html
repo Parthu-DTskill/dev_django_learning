@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla JS Random Number Generator</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}" />
+    <link
+      rel="preconnect"
+      href="{% static 'https://fonts.gstatic.com' %}"
+      crossorigin
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="page-title">Vanilla JS Random Number Generator</h1>
+      <hr id="title_hr" />
+      <!-- Generator Wrapper -->
+      <div id="generator-wrapper">
+        <form action="" id="generator-form">
+          <div id="generated-code">0</div>
+          <!-- Input Field -->
+          <div class="inline-form-field">
+            <!-- Minimum Number Field -->
+            <div class="form-field">
+              <label for="">Minimum Number</label>
+              <input type="number" name="minimum" min="0" required />
+            </div>
+            <!-- Minimum Number Field -->
+            <!-- Maximum Number Field -->
+            <div class="form-field">
+              <label for="">Maximum Number</label>
+              <input type="number" name="maximum" min="0" required />
+            </div>
+            <!-- Maximum Number Field -->
+          </div>
+          <!-- Input Field -->
+          <!-- Generate Code Button -->
+          <div class="btn-field">
+            <button id="generate-btn">Generate</button>
+          </div>
+          <!-- Generate Code Button -->
+        </form>
+      </div>
+      <!-- Generator Wrapper -->
+    </div>
+    <script src="{% static 'script.js' %}"></script>
+  </body>
+</html>
