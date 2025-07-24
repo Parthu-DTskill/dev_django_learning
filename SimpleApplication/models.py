@@ -12,3 +12,4 @@ class Home(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     img = models.ImageField(upload_to='images/')
+    location = models.CharField(max_length=100)
